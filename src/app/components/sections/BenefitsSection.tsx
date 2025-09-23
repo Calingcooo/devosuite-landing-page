@@ -1,33 +1,13 @@
 import React from "react";
 import { LuCircleCheck } from "react-icons/lu";
 
-import { benefits } from "@/app/data/benefits";
+import { benefits, CardDetails } from "@/app/data/benefits";
 import Card from "../ui/card/Card";
 
 const BenefitsSection = () => {
-  const CardDetails = [
-    {
-      id: 1,
-      header: "98% Uptime Guarantee",
-      description:
-        "Industry-leading reliability ensures your business operations never stop, backed by our SLA commitment.",
-    },
-    {
-      id: 2,
-      header: "24/7 Expert Support",
-      description:
-        "Dedicated support team available round-the-clock to ensure your success with comprehensive training and assistance.",
-    },
-    {
-      id: 3,
-      header: "Scalable Architecture",
-      description:
-        "Grows with your business from startup to enterprise, handling millions of transactions seamlessly.",
-    },
-  ];
 
   return (
-    <section className="bg-[#e6f5ff]">
+    <section className="bg-[#e6f5ff] py-24">
       <div className="container flex flex-col items-center md:flex-row gap-8 mx-auto px-6">
         {/* Left Side */}
         <div className="flex items-center w-full md:w1/2">
