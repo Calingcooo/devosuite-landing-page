@@ -19,7 +19,7 @@ const HeroSection = () => {
         playsInline
         className="absolute inset-0 w-full h-full object-cover"
       >
-        <source src="/assets/hero-bg.mp4" type="video/mp4" />
+        <source src="https://ik.imagekit.io/vah26qifw/Devolution%20PH/devosuite/assets/hero-bg_dqO3OZ0OP.mp4?updatedAt=1758600576086" type="video/mp4" />
       </video>
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-10 border">
@@ -28,7 +28,7 @@ const HeroSection = () => {
       </div>
       <div className="absolute inset-0 bg-black/60"></div> {/* Gradient overlay */}
 
-      <div className="container relative z-10 mx-auto px-6 text-center text-white">
+      <div className="container relative z-10 mx-auto px-6 py-5 text-center text-white">
         <div className="mb-16">
           <div className="inline-block bg-white/5 backdrop-blur-lg rounded-3xl p-8 mb-8 shadow-hero border border-white/10">
             <Image
@@ -41,7 +41,7 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+        <h1 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
           All-in-One ERP
           <span className="block text-white/90">for Growing Businesses</span>
         </h1>
