@@ -22,7 +22,7 @@ const FeaturesSection = () => {
         <div className="flex flex-wrap">
           {features.map((f, i) => (
             <div key={i} className="w-full p-4 lg:w-1/3 flex hover:scale-[1.01] cursor-pointer transition-all duration-200">
-              <Card bordered className="text-start hover:shadow-[0_2px_4px_rgba(0,128,255,0.0.2)] border-gray-200">
+              <Card bordered className="bg-gradient-card text-start hover:shadow-[0_2px_4px_rgba(0,128,255,0.0.2)] border-gray-200">
                 {/* Card Header */}
                 <div className="pb-8">
                   <div className="w-12 h-12 bg-blue-200/50 mb-8 rounded-lg flex items-center justify-center group-hover:scale-110 transition-bounce">

@@ -19,7 +19,7 @@ const Card: React.FC<CardProps> = ({
   return (
     <div
       className={clsx(
-        "rounded-lg card bg-gradient-card",
+        "rounded-lg card",
         {
           "p-6": padded,
           border: bordered,

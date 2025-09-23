@@ -19,15 +19,19 @@ const HeroSection = () => {
         playsInline
         className="absolute inset-0 w-full h-full object-cover"
       >
-        <source src="https://ik.imagekit.io/vah26qifw/Devolution%20PH/devosuite/assets/hero-bg_dqO3OZ0OP.mp4?updatedAt=1758600576086" type="video/mp4" />
+        <source
+          src="https://ik.imagekit.io/vah26qifw/Devolution%20PH/devosuite/assets/hero-bg_dqO3OZ0OP.mp4?updatedAt=1758600576086"
+          type="video/mp4"
+        />
       </video>
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-10 border">
         <div className="absolute top-20 left-20 w-72 h-72 bg-white rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-20 w-96 h-96 bg-white rounded-full blur-3xl"></div>
       </div>
-      <div className="absolute inset-0 bg-black/60"></div> {/* Gradient overlay */}
-
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 bg-black/60"></div>{" "}
+      
       <div className="container relative z-10 mx-auto px-6 py-5 text-center text-white">
         <div className="mb-16">
           <div className="inline-block bg-white/5 backdrop-blur-lg rounded-3xl p-8 mb-8 shadow-hero border border-white/10">
