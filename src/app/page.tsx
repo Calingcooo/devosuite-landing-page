@@ -6,7 +6,7 @@ import PricingSection from "./components/sections/PricingSection";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="min-h-svh">
       <HeroSection />
       <FeaturesSection />
       <BenefitsSection />
