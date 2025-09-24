@@ -34,11 +34,11 @@ const HeroSection = () => {
       
       <div className="container relative z-10 mx-auto px-6 py-5 text-center text-white">
         <div className="mb-16">
-          <div className="inline-block bg-white/5 backdrop-blur-lg rounded-3xl p-8 mb-8 shadow-hero border border-white/10">
+          <div className="inline-block bg-blue-500/20 hover:bg-blue-500/50 backdrop-blur-lg rounded-3xl p-8 mb-8 shadow-hero border border-white/10">
             <Image
-              src="/assets/banner-logo.png"
+              src="/assets/banner-logo-2.png"
               alt="DevoSuite - Enterprise Solutions Made Simple"
-              className="h-32 w-auto mx-auto filter brightness-0 invert"
+              className="h-48 w-auto mx-auto filter brightness-0 invert"
               width={500}
               height={500}
             />
