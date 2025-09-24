@@ -38,7 +38,7 @@ const HeroSection = () => {
             <Image
               src="/assets/banner-logo-2.png"
               alt="DevoSuite - Enterprise Solutions Made Simple"
-              className="h-48 w-auto mx-auto filter brightness-0 invert"
+              className="h-32 w-auto mx-auto filter brightness-0 invert"
               width={500}
               height={500}
             />
