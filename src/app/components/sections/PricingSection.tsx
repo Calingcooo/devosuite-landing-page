@@ -21,19 +21,25 @@ const PricingSection = () => {
         </div>
 
         {/* Price Card */}
-        <div className="flex items-center justify-evenly">
+        <div className="flex flex-col md:flex-row items-center justify-evenly">
           {pricingPlans.map((p, i) => (
-            <div key={i} className="max-w-7xl mx-auto p-4 flex-1">
+            <div
+              key={i}
+              className={clsx(
+                "max-w-7xl mx-auto p-4 w-full md:flex-1",
+                p.popular ? "order-first md:order-none" : "order-none"
+              )}
+            >
               <PricingCard
                 style={` ${
                   p.popular
-                    ? "relative border border-blue-500 shadow-md scale-105 bg-gradient-card"
+                    ? "relative border border-blue-500 shadow-md scale-105 bg-gradient-card hover:shadow-[0_2px_4px_rgba(0,128,255,0.0.3)]"
                     : "border border-gray-200 bg-card hover:shadow-lg"
                 } transition-all py-8 px-2 cursor-pointer `}
               >
                 {p.popular && (
-                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <div className="bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-1">
+                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-40">
+                    <div className="bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center justify-center gap-1">
                       <LuStar className="w-4 h-4" />
                       Most Popular
                     </div>
@@ -75,10 +81,10 @@ const PricingSection = () => {
                 {/* Card Buttons */}
                 <button
                   className={clsx(
-                    "font-bold w-full rounded-md mt-5 py-2 cursor-pointer ",
+                    "font-bold w-full rounded-md mt-5 py-2 cursor-pointer hover:shadow-sm transition-colors duration-200 ease-in-out",
                     p.popular
-                      ? "bg-blue-500 text-white"
-                      : "bg-gray-200 text-stone-900"
+                      ? "bg-blue-500 hover:bg-blue-600 text-white"
+                      : "bg-gray-200 hover:bg-gray-300 text-stone-900"
                   )}
                 >
                   {p.popular ? "Start Free Trial" : "Get Started"}
@@ -90,7 +96,8 @@ const PricingSection = () => {
 
         <div className="text-center mt-12">
           <p className="text-gray-500 mb-4">
-            Need a custom solution? We offer tailored packages for enterprise clients.
+            Need a custom solution? We offer tailored packages for enterprise
+            clients.
           </p>
           <button className="bg-gray-200 font-bold text-gray-800 px-8 py-3 hover:bg-blue-200/50 rounded-md shadow-lg transition-colors duration-200 cursor-pointer">
             Contact Sales Team
