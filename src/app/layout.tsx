@@ -21,11 +21,11 @@ export const metadata: Metadata = {
     title: "DevoSuite - Enterprise Solutions Made Simple",
     description: "Transform your business operations with our comprehensive ERP solution. Join thousands of companies streamlining their processes with DevoSuite.",
     type: "website",
-    images: ["https://ik.imagekit.io/vah26qifw/Devolution%20PH/devosuite/assets/banner-logo_Qk2goay0W.png?updatedAt=1758600560140"]
+    images: ["https://ik.imagekit.io/vah26qifw/Devolution%20PH/devosuite/assets/banner_logo_2_a_SPq14g0.png?updatedAt=1758694488288"]
   },
 };
 
-{/* <meta property="og:title" content="DevoSuite - Enterprise Solutions Made Simple" />
+{/* <meta property="og:title" content="DevoSuite - Enterprise Solutions Made Simple" />l
 <meta property="og:description" content="Transform your business operations with our comprehensive ERP solution. Join thousands of companies streamlining their processes with DevoSuite." />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
