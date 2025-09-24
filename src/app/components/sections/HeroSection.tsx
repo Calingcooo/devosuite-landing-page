@@ -1,7 +1,12 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const HeroSection = () => {
+  const router = useRouter();
+
   return (
     <section
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
@@ -31,7 +36,6 @@ const HeroSection = () => {
       </div>
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-black/60"></div>{" "}
-      
       <div className="container relative z-10 mx-auto px-6 py-5 text-center text-white">
         <div className="mb-16">
           <div className="inline-block bg-white/5 backdrop-blur-lg rounded-3xl p-8 mb-8 shadow-[0_20px_40px_#007FFF26] border border-white/10">
@@ -56,11 +60,14 @@ const HeroSection = () => {
           real-time insights and secure cloud access.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-          <button className="bg-blue-500 hover:bg-blue-700 hover:scale-105 transition-transform duration-200 px-8 py-4 font-bold rounded-xl cursor-pointer text-white shadow-md">
+        <div className="flex flex-col sm:flex-row flex-1 gap-4 justify-center items-center mb-12">
+          <button
+            className="bg-blue-500 hover:bg-blue-700 hover:scale-105 w-full sm:w-auto transition-transform duration-200 h-14 rounded-lg px-10 text-lg py-4 font-bold cursor-pointer text-white shadow-md"
+            onClick={() => router.push("/start-free-trial")}
+          >
             Start Free Trial
           </button>
-          <button className="px-8 py-4 bg-white/10 border border-white/20 text-white hover:bg-white/20 hover:scale-105 transition-transform duration-200 backdrop-blur-sm rounded-xl cursor-pointer shadow-md">
+          <button className="bg-white/10 border border-white/20 text-white w-full sm:w-auto hover:bg-white/20 h-14 rounded-lg px-10 text-lg py-4 font-bold transition-transform duration-200 backdrop-blur-sm cursor-pointer shadow-md">
             Watch Demo
           </button>
         </div>
