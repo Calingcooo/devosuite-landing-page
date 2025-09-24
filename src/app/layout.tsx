@@ -21,7 +21,8 @@ export const metadata: Metadata = {
     title: "DevoSuite - Enterprise Solutions Made Simple",
     description: "Transform your business operations with our comprehensive ERP solution. Join thousands of companies streamlining their processes with DevoSuite.",
     type: "website",
-  }
+    images: ["https://ik.imagekit.io/vah26qifw/Devolution%20PH/devosuite/assets/banner-logo_Qk2goay0W.png?updatedAt=1758600560140"]
+  },
 };
 
 {/* <meta property="og:title" content="DevoSuite - Enterprise Solutions Made Simple" />
