@@ -33,7 +33,7 @@ const page = () => {
             Interactive Demo
           </h3>
           <p className="text-gray-500 text-start">
-            15-minute walkthrough of DevoSuite's key features
+            15-minute walkthrough of DevoSuite&apos;s key features
           </p>
 
           <DemoVideo />
