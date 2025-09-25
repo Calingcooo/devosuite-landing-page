@@ -9,7 +9,7 @@ const HeroSection = () => {
 
   return (
     <section
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-svh flex items-center justify-center overflow-hidden"
       // style={{
       //   backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('/assets/hero-background.jpg')`,
       //   backgroundSize: "cover",
@@ -67,7 +67,9 @@ const HeroSection = () => {
           >
             Start Free Trial
           </button>
-          <button className="bg-white/10 border border-white/20 text-white w-full sm:w-auto hover:bg-white/20 h-14 rounded-lg px-10 text-lg py-4 font-bold transition-transform duration-200 backdrop-blur-sm cursor-pointer shadow-md">
+          <button className="bg-white/10 border border-white/20 text-white w-full sm:w-auto hover:bg-white/20 h-14 rounded-lg px-10 text-lg py-4 font-bold transition-transform duration-200 backdrop-blur-sm cursor-pointer shadow-md"
+            onClick={() => router.push("/watch-demo")}
+          >
             Watch Demo
           </button>
         </div>
