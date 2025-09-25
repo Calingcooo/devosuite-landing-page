@@ -9,7 +9,7 @@ const HeroSection = () => {
 
   return (
     <section
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-svh flex items-center justify-center overflow-hidden"
       // style={{
       //   backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('/assets/hero-background.jpg')`,
       //   backgroundSize: "cover",

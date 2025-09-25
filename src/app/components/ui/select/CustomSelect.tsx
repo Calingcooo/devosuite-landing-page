@@ -75,9 +75,9 @@ const Select: React.FC<CustomSelectProps> = ({
   const isOpenUp = position === "top" || (position === "auto" && openUp);
 
   return (
-    <div className={clsx("relative flex flex-col gap-1", sizeClasses[size])}>
+    <div className={clsx("relative flex flex-col", sizeClasses[size])}>
       {label && (
-        <label className="text-start text-sm font-medium leading-none capitalize">
+        <label className="text-start text-sm font-medium leading-none mb-2 capitalize">
           {label} {isRequired && <span className="text-red-500">*</span>}
         </label>
       )}
@@ -112,7 +112,7 @@ const Select: React.FC<CustomSelectProps> = ({
                   setOpen(false);
                 }}
                 className={clsx(
-                  "px-3 py-2 text-sm cursor-pointer hover:bg-blue-200 rounded text-stone-800",
+                  "text-start px-3 py-2 text-sm cursor-pointer hover:bg-blue-200 rounded text-stone-800",
                   opt.value === value && "bg-blue-200"
                 )}
               >

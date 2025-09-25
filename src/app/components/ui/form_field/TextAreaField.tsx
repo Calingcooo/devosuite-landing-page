@@ -23,7 +23,7 @@ const TextAreaField: React.FC<TextAreaProps> = ({
   return (
     <div
       className={clsx(
-        direction === "row" ? "flex items-center gap-2" : "flex flex-col",
+        direction === "row" ? "flex items-center" : "flex flex-col",
         className
       )}
     >
@@ -32,7 +32,7 @@ const TextAreaField: React.FC<TextAreaProps> = ({
           htmlFor={name}
           className={clsx(
             "text-sm font-medium leading-none capitalize",
-            direction === "row" ? "mb-0" : "mb-1"
+            direction === "row" ? "mb-0" : "mb-2"
           )}
         >
           {label} <span className="text-red-500">{isRequired && "*"}</span>

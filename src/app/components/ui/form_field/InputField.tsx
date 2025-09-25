@@ -36,7 +36,7 @@ const InputField: React.FC<InputFieldProps> = ({
           htmlFor={name}
           className={clsx(
             "text-sm font-medium leading-none capitalize",
-            direction === "row" ? "mb-0" : "mb-1"
+            direction === "row" ? "mb-0" : "mb-2"
           )}
         >
           {label} <span className="text-red-500">{isRequired && "*"}</span>
