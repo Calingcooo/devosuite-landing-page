@@ -67,7 +67,9 @@ const HeroSection = () => {
           >
             Start Free Trial
           </button>
-          <button className="bg-white/10 border border-white/20 text-white w-full sm:w-auto hover:bg-white/20 h-14 rounded-lg px-10 text-lg py-4 font-bold transition-transform duration-200 backdrop-blur-sm cursor-pointer shadow-md">
+          <button className="bg-white/10 border border-white/20 text-white w-full sm:w-auto hover:bg-white/20 h-14 rounded-lg px-10 text-lg py-4 font-bold transition-transform duration-200 backdrop-blur-sm cursor-pointer shadow-md"
+            onClick={() => router.push("/watch-demo")}
+          >
             Watch Demo
           </button>
         </div>
