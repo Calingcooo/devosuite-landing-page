@@ -62,7 +62,7 @@ const page = () => {
           Contact Our Sales Team
         </h1>
         <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-          Let's discuss how DevoSuite can transform your business operations.
+          Let&apos;s discuss how DevoSuite can transform your business operations.
           Our experts are ready to help.
         </p>
       </div>
