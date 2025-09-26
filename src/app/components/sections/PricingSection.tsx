@@ -56,7 +56,7 @@ const PricingSection = () => {
                     <span className="text-4xl font-bold text-blue-600">
                       {p.price}
                     </span>
-                    <span className="text-gray-500 ml-2 text-sm">
+                    <span className="text-gray-500 text-lg">
                       {p.period}
                     </span>
                   </div>
