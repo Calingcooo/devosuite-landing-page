@@ -13,7 +13,7 @@ import { pricingPlans } from "../data/pricingPlans";
 import Card from "../components/ui/card/Card";
 import PricingCard from "../components/ui/card/PricingCard";
 
-const page = () => {
+const Page = () => {
   const steps = [
     {
       step: "1",
@@ -207,4 +207,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
