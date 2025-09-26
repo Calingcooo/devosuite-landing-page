@@ -8,6 +8,7 @@ import {
   LuClock,
   LuArrowRight,
 } from "react-icons/lu";
+import { employeeCountOptions, industryOptions } from "../data/selectData"
 import InputField from "../components/ui/form_field/InputField";
 import CustomSelect from "../components/ui/select/CustomSelect";
 import TextAreaField from "../components/ui/form_field/TextAreaField";
@@ -44,27 +45,12 @@ const page = () => {
     },
   ];
 
-  const employeeCountOptions = [
-    { value: "1-10", label: "1-10" },
-    { value: "11-50", label: "11-50" },
-    { value: "51-200", label: "51-200" },
-    { value: "201-500", label: "201-500" },
-    { value: "501+", label: "501+" },
-  ];
 
-  const industryOptions = [
-    { value: "retail", label: "Retail" },
-    { value: "manufacturing", label: "Manufacturing" },
-    { value: "services", label: "Services" },
-    { value: "healthcare", label: "Healthcare" },
-    { value: "education", label: "Education" },
-    { value: "other", label: "Other" },
-  ];
 
   return (
     <div className="bg-blue-200/20">
       {/* Header */}
-      <div className="text-center py-12">
+      <div className="text-center py-12 px-2">
         <h1 className="text-4xl md:text-5xl font-bold text-stone-900 mb-4">
           Start Your Free Trial
         </h1>
@@ -164,7 +150,7 @@ const page = () => {
               <LuArrowRight className="w-5 h-5" />
             </button>
 
-            <div className="text-center text-sm text-gray-500">
+            <div className="text-center text-xs tracking-wide text-gray-500">
               By starting your trial, you agree to our Terms of Service and
               Privacy Policy.
             </div>
@@ -185,7 +171,7 @@ const page = () => {
                 <div className="w-12 h-12 bg-blue-200/50 rounded-lg flex items-center justify-center">
                   <t.icon className="w-6 h-6 text-blue-500" />
                 </div>
-                <h3 className="text-2xl text-stone-800 font-semibold leading-none tracking-tight">
+                <h3 className="text-2xl text-gray-700 font-semibold leading-none tracking-tight">
                   {t.title}
                 </h3>
               </div>

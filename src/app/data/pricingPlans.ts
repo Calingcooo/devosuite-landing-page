@@ -5,12 +5,11 @@ export const pricingPlans = [
         period: "/month",
         description: "Perfect for small businesses getting started with ERP",
         features: [
-            "Up to 10 users",
-            "Core modules (CRM, Inventory, Accounting)",
+            "Up to 5 users",
+            "Core modules (Inventory, Sales, Accounting)",
             "Basic reporting",
             "Email support",
-            "Mobile app access",
-            "Data backup"
+            "Mobile app access"
         ],
         popular: false
     },
@@ -20,14 +19,12 @@ export const pricingPlans = [
         period: "/month",
         description: "Ideal for growing businesses with advanced needs",
         features: [
-            "Up to 50 users",
+            "Up to 20 users",
             "All modules included",
             "Advanced analytics & reporting",
             "Priority support",
             "API access",
-            "Custom workflows",
-            "Multi-location support",
-            "Advanced security features"
+            "Custom workflows"
         ],
         popular: true
     },

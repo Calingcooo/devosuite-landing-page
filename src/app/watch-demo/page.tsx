@@ -11,7 +11,7 @@ const page = () => {
   return (
     <div className="bg-blue-200/20">
       {/* Header */}
-      <div className="text-center py-12">
+      <div className="text-center py-12 px-2">
         <h1 className="text-4xl md:text-5xl font-bold text-stone-900 mb-4">
           See DevoSuite in Action
         </h1>

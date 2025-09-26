@@ -1,11 +1,15 @@
+"use client";
 import React from "react";
 import clsx from "clsx";
+import { useRouter } from "next/navigation";
 import { LuStar, LuCheck } from "react-icons/lu";
 
 import PricingCard from "../ui/card/PricingCard";
 import { pricingPlans } from "@/app/data/pricingPlans";
 
 const PricingSection = () => {
+  const router = useRouter()
+
   return (
     <section className="py-12">
       <div className="container">
@@ -56,9 +60,7 @@ const PricingSection = () => {
                     <span className="text-4xl font-bold text-blue-600">
                       {p.price}
                     </span>
-                    <span className="text-gray-500 text-lg">
-                      {p.period}
-                    </span>
+                    <span className="text-gray-500 text-lg">{p.period}</span>
                   </div>
 
                   {/* Card Description */}
@@ -79,16 +81,18 @@ const PricingSection = () => {
                 </div>
 
                 {/* Card Buttons */}
-                <button
-                  className={clsx(
-                    "font-bold w-full rounded-md mt-5 py-2 cursor-pointer hover:shadow-sm transition-colors duration-200 ease-in-out",
-                    p.popular
-                      ? "bg-blue-500 hover:bg-blue-600 text-white"
-                      : "bg-gray-200 hover:bg-gray-300 text-stone-900"
-                  )}
-                >
-                  {p.popular ? "Start Free Trial" : "Get Started"}
-                </button>
+                <div className="flex flex-col mt-5 gap-2">
+                  <button className="bg-gray-200 hover:bg-gray-300 text-stone-900 font-bold w-full rounded-md py-2 cursor-pointer hover:shadow-sm transition-colors duration-200 ease-in-out">
+                    Get Started
+                  </button>
+                  <button
+                    className={clsx(
+                      "font-bold w-full bg-blue-500 hover:bg-blue-600 text-white rounded-md py-2 cursor-pointer hover:shadow-sm transition-colors duration-200 ease-in-out"
+                    )}
+                  >
+                    Start Free Trial
+                  </button>
+                </div>
               </PricingCard>
             </div>
           ))}
@@ -99,7 +103,7 @@ const PricingSection = () => {
             Need a custom solution? We offer tailored packages for enterprise
             clients.
           </p>
-          <button className="bg-gray-200 font-bold text-gray-800 px-8 py-3 hover:bg-blue-200/50 rounded-md shadow-lg transition-colors duration-200 cursor-pointer">
+          <button className="bg-gray-200 font-bold text-gray-800 px-8 py-3 hover:bg-blue-200/50 rounded-md shadow-lg transition-colors duration-200 cursor-pointer" onClick={() => router.push("/contact-sales")}>
             Contact Sales Team
           </button>
         </div>
