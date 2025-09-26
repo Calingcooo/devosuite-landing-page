@@ -1,50 +1,45 @@
 export const pricingPlans = [
     {
         name: "Starter",
-        price: "$99",
-        period: "per month",
+        price: "₱2,999",
+        period: "/month",
         description: "Perfect for small businesses getting started with ERP",
         features: [
-            "Up to 10 users",
-            "Core modules (CRM, Inventory, Accounting)",
+            "Up to 5 users",
+            "Core modules (Inventory, Sales, Accounting)",
             "Basic reporting",
             "Email support",
-            "Mobile app access",
-            "Data backup"
+            "Mobile app access"
         ],
         popular: false
     },
     {
         name: "Professional",
-        price: "$299",
-        period: "per month",
+        price: "₱5,999",
+        period: "/month",
         description: "Ideal for growing businesses with advanced needs",
         features: [
-            "Up to 50 users",
+            "Up to 20 users",
             "All modules included",
             "Advanced analytics & reporting",
             "Priority support",
             "API access",
-            "Custom workflows",
-            "Multi-location support",
-            "Advanced security features"
+            "Custom workflows"
         ],
         popular: true
     },
     {
         name: "Enterprise",
-        price: "$799",
-        period: "per month",
+        price: "Custom",
+        period: "pricing",
         description: "For large organizations requiring full customization",
         features: [
             "Unlimited users",
-            "All features included",
-            "Custom integrations",
+            "Full customization",
+            "Advanced security features",
             "Dedicated account manager",
             "24/7 phone support",
-            "On-premise deployment option",
-            "Advanced compliance tools",
-            "Custom training programs"
+            "On-premise deployment option"
         ],
         popular: false
     }
