@@ -1,11 +1,14 @@
+"use client";
+
 import React from "react";
+import { useRouter } from "next/navigation";
 import { LuCircleCheck } from "react-icons/lu";
 
 import { benefits, CardDetails } from "@/app/data/benefits";
 import Card from "../ui/card/Card";
 
 const BenefitsSection = () => {
-
+  const router = useRouter()
   return (
     <section className="bg-[#e6f5ff] py-24">
       <div className="container flex flex-col items-center md:flex-row gap-8 mx-auto px-6">
@@ -37,7 +40,7 @@ const BenefitsSection = () => {
               ))}
             </div>
 
-            <button className="min-w-48 py-4 rounded-xl bg-blue-500 text-white hover:bg-blue-600 hover:scale-105 shadow-md font-semibold transition-transform duration-300 ease-in-out cursor-pointer">
+            <button className="min-w-48 py-4 rounded-xl bg-blue-500 text-white hover:bg-blue-600 hover:scale-105 shadow-md font-semibold transition-transform duration-300 ease-in-out cursor-pointer" onClick={() => router.push("/get-started")}>
               Get Started Today
             </button>
           </div>
