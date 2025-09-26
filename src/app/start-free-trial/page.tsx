@@ -172,7 +172,7 @@ const page = () => {
         </Card>
 
         {/* Right Side Form */}
-        <div className="flex flex-col space-y-6 w-1/2 h-full">
+        <div className="flex flex-col space-y-6 w-full md:w-1/2">
           {freeTrialCardDetails.map((t) => (
             <Card
               key={t.id}

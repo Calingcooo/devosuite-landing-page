@@ -25,7 +25,7 @@ const page = () => {
       <div className="container mx-auto px-6 py-3 flex flex-col md:flex-row items-start justify-between gap-12">
         {/* Left Side */}
         <Card
-          className="border-gray-200 bg-white text-start w-1/2"
+          className="border-gray-200 bg-white text-start w-full md:w-1/2"
           bordered
           shadow="sm"
         >
@@ -63,7 +63,7 @@ const page = () => {
         </Card>
 
         {/* Right Side */}
-        <div className="flex flex-col space-y-6 w-1/2 h-full">
+        <div className="flex flex-col space-y-6 w-full md:w-1/2">
           {demoCardDetails.map((demo) => (
             <Card
               key={demo.id}
@@ -113,14 +113,14 @@ const page = () => {
             <h4 className="font-semibold text-stone-900 mb-3">
               Most Requested Demo Topics
             </h4>
-            <div className="grid grid-cols-2 gap-2 text-sm">
-              <div className="text-gray-500">• Multi-location management</div>
-              <div className="text-gray-500">• BIR compliance features</div>
-              <div className="text-gray-500">• Mobile app functionality</div>
-              <div className="text-gray-500">• Custom workflows</div>
-              <div className="text-gray-500">• Integration capabilities</div>
-              <div className="text-gray-500">• Reporting & analytics</div>
-            </div>
+            <ul className="gap-2 text-sm list-disc list-inside text-gray-500">
+              <li>Multi-location management</li>
+              <li>BIR compliance features</li>
+              <li>Mobile app functionality</li>
+              <li>Custom workflows</li>
+              <li>Integration capabilities</li>
+              <li>Reporting & analytics</li>
+            </ul>
           </div>
         </div>
       </div>
