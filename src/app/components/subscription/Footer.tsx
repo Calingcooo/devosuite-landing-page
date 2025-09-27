@@ -5,15 +5,15 @@ const Footer = () => {
   return (
     <div className="text-center py-8">
       <div className="flex flex-col sm:flex-row justify-center items-center gap-4 text-sm text-gray-500">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1">
           <LuLock className="w-4 h-4" />
           <span>Secured checkout – Cancel anytime</span>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1">
           <LuCircleHelp className="w-4 h-4" />
           <span>
             Need help?{" "}
-            <a href="#" className="text-blue-500 hover:underline">
+            <a href="#" className="text-blue-500 underline hover:text-blue-600">
               Contact support
             </a>
           </span>
