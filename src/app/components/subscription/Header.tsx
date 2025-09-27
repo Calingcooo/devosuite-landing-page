@@ -34,9 +34,12 @@ const Header: React.FC<FormHeaderProps> = ({ currentStep }) => {
   return (
     <div className="flex flex-col items-center justify-center">
       <h3 className="flex items-center gap-1 text-2xl font-semibold text-gray-700 capitalize">
-        <div className="w-10 h-10 shrink-0 bg-blue-200/30 rounded-lg flex items-center justify-center">
-          <LuUser className="w-6 h-6 text-blue-500" />
-        </div>
+        {step.id === "create_account" && (
+          <div className="w-10 h-10 shrink-0 bg-blue-200/30 rounded-lg flex items-center justify-center">
+            <LuUser className="w-6 h-6 text-blue-500" />
+          </div>
+        )}
+
         {step.title}
       </h3>
       <p className="text-gray-500 text-sm mt-2 capitalize">{step.subTitle}</p>

@@ -8,6 +8,7 @@ type StepCreateAccountProps = {
 };
 
 const StepCreateAccount: React.FC<StepCreateAccountProps> = ({ onNext }) => {
+  
   const fields = [
     { id: "first_name", label: "first name", isRequired: true },
     { id: "last_name", label: "last name", isRequired: true },

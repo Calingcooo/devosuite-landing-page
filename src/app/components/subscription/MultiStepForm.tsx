@@ -16,7 +16,7 @@ const MultiStepForm = () => {
       case 1:
         return <StepCreateAccount onNext={() => setCurrentStep(2)} />;
       case 2:
-        return <StepVerifyEmail onNext={() => setCurrentStep(3)} onBack={() => setCurrentStep(1)} />;
+        return <StepVerifyEmail onNext={() => setCurrentStep(3)} prevStep={() => setCurrentStep(1)} />;
       case 3:
         return <StepPaymentDetails onNext={() => setCurrentStep(4)} onBack={() => setCurrentStep(2)} />;
       case 4:
