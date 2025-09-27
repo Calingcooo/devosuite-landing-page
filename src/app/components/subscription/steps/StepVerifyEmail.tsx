@@ -44,7 +44,7 @@ const StepVerifyEmail: React.FC<StepVerifyEmailProps> = ({
       <button
         type="submit"
         onClick={onNext}
-        className="w-full md:w-1/2 gap-3 flex items-center justify-center rounded-lg h-12 shadow-md font-medium tracking-wide bg-blue-500 hover:bg-blue-600 hover:scale-102 transition-all duration-200 text-white"
+        className="w-full md:w-1/2 gap-3 flex items-center justify-center rounded-lg h-12 shadow-md font-medium tracking-wide bg-blue-500 hover:bg-blue-600 transition-colors duration-200 text-white cursor-pointer"
       >
         <span>Verify Email</span>
         <LuArrowRight className="w-4 h-4" />

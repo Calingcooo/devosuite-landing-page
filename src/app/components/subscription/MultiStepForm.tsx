@@ -18,7 +18,7 @@ const MultiStepForm = () => {
       case 2:
         return <StepVerifyEmail onNext={() => setCurrentStep(3)} prevStep={() => setCurrentStep(1)} />;
       case 3:
-        return <StepPaymentDetails onNext={() => setCurrentStep(4)} onBack={() => setCurrentStep(2)} />;
+        return <StepPaymentDetails onNext={() => setCurrentStep(4)} onPrev={() => setCurrentStep(2)} />;
       case 4:
         return <StepCompleteOrder onBack={() => setCurrentStep(3)} />;
       default:

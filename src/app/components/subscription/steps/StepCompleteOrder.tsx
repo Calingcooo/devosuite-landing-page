@@ -1,15 +1,11 @@
-import React from 'react'
+import React from "react";
 
 type StepCompleteOrderProps = {
-    onBack: () => void;
-}
+  onBack: () => void;
+};
 
 const StepCompleteOrder: React.FC<StepCompleteOrderProps> = ({ onBack }) => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  return <div onClick={onBack}></div>;
+};
 
-export default StepCompleteOrder
+export default StepCompleteOrder;
