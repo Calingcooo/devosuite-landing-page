@@ -14,7 +14,7 @@ import CustomSelect from "../components/ui/select/CustomSelect";
 import TextAreaField from "../components/ui/form_field/TextAreaField";
 import Card from "../components/ui/card/Card";
 
-const page = () => {
+const Page = () => {
   const freeTrialCardDetails = [
     {
       id: 1,
@@ -212,4 +212,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

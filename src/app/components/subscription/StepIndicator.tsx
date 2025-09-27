@@ -48,8 +48,6 @@ const StepIndicator: React.FC<StepsIndicatorProps> = ({ currentStep = 1 }) => {
           </React.Fragment>
         ))}
       </div>
-
-      
     </div>
   );
 };

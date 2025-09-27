@@ -7,7 +7,7 @@ import { demoOverView, demoCardDetails } from "../data/demoPage";
 import Card from "../components/ui/card/Card";
 import DemoVideo from "../components/demo/DemoVideo";
 
-const page = () => {
+const Page = () => {
   return (
     <div className="bg-blue-200/20">
       <div className="container mx-auto">
@@ -130,4 +130,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

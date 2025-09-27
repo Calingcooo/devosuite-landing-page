@@ -21,7 +21,7 @@ import InputField from "../components/ui/form_field/InputField";
 import CustomSelect from "../components/ui/select/CustomSelect";
 import TextAreaField from "../components/ui/form_field/TextAreaField";
 
-const page = () => {
+const Page = () => {
   const contactInformation = [
     { icon: LuMail, title: "Email", subTitle: "calingco.je@gmail.com" },
     { icon: LuPhone, title: "Phone", subTitle: "+63 953 544 4502" },
@@ -264,4 +264,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

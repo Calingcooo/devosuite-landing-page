@@ -11,6 +11,7 @@ type InputFieldProps = {
   direction?: "row" | "col";
   isRequired: boolean;
   className?: string;
+  textAlign?: "start" | "center" | "right";
 };
 
 const InputField: React.FC<InputFieldProps> = ({
@@ -23,8 +24,11 @@ const InputField: React.FC<InputFieldProps> = ({
   direction = false,
   isRequired = false,
   className,
+  textAlign = "start",
 }) => {
+  const align = []
   return (
+  
     <div
       className={clsx(
         direction === "row" ? "flex items-center gap-2" : "flex flex-col",
@@ -49,7 +53,14 @@ const InputField: React.FC<InputFieldProps> = ({
         value={value}
         placeholder={placeholder}
         onChange={onChange}
-        className="h-10 border border-gray-200 rounded-lg px-3 py-2 text-base focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
+        className={clsx(
+          "h-10 border border-gray-200 rounded-lg px-3 placeholder:text-gray-300 py-2 text-base focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500",
+          {
+            "text-start": textAlign === "start",
+            "text-center": textAlign === "center",
+            "text-right": textAlign === "right",
+          }
+        )}
       />
     </div>
   );
