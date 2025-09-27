@@ -3,7 +3,11 @@ import { LuArrowRight } from "react-icons/lu";
 import Card from "../../ui/card/Card";
 import InputField from "../../ui/form_field/InputField";
 
-const StepCreateAccount = () => {
+type StepCreateAccountProps = {
+  onNext: () => void;
+};
+
+const StepCreateAccount: React.FC<StepCreateAccountProps> = ({ onNext }) => {
   const fields = [
     { id: "first_name", label: "first name", isRequired: true },
     { id: "last_name", label: "last name", isRequired: true },
@@ -30,7 +34,10 @@ const StepCreateAccount = () => {
           />
         ))}
 
-        <button className="flex items-center justify-center w-full py-3 capitalize rounded-lg font-semibold gap-5 text-white bg-blue-500 shadow-md hover:bg-blue-600 transition-colors duration-200 cursor-pointer">
+        <button
+          className="flex items-center justify-center w-full py-3 capitalize rounded-lg font-semibold gap-5 text-white bg-blue-500 shadow-md hover:bg-blue-600 transition-colors duration-200 cursor-pointer"
+          onClick={onNext}
+        >
           create account
           <LuArrowRight className="w-4 h-4" />
         </button>
