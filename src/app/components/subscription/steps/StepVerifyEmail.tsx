@@ -51,7 +51,7 @@ const StepVerifyEmail: React.FC<StepVerifyEmailProps> = ({
       </button>
 
       <div className="text-center space-y-2 mt-3">
-        <p className="text-sm text-gray-500">Didn't receive the code?</p>
+        <p className="text-sm text-gray-500">Didn&apos;t receive the code?</p>
         <button
           type="button"
           className="text-blue-500 hover:text-blue-600 hover:underline text-sm font-medium cursor-pointer"
