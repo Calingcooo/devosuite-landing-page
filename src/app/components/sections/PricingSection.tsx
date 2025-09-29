@@ -82,15 +82,24 @@ const PricingSection = () => {
 
                 {/* Card Buttons */}
                 <div className="flex flex-col mt-5 gap-2">
-                  {/* Primary CTA */}
-                  <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold w-full rounded-md py-2 cursor-pointer hover:shadow-sm transition-colors">
-                    Start Free Trial
-                  </button>
+                  {p.name === "Enterprise" ? (
+                    // Only one button for Enterprise
+                    <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold w-full rounded-md py-2 cursor-pointer hover:shadow-sm transition-colors uppercase">
+                      Contact Sales
+                    </button>
+                  ) : (
+                    <>
+                      {/* Primary CTA */}
+                      <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold w-full rounded-md py-2 cursor-pointer hover:shadow-sm transition-colors">
+                        Start Free Trial
+                      </button>
 
-                  {/* Secondary CTA as subtle link */}
-                  <button className="text-blue-500 hover:text-blue-600 hover:underline text-sm font-medium cursor-pointer">
-                    Or Subscribe Now
-                  </button>
+                      {/* Secondary CTA as subtle link */}
+                      <button className="text-blue-500 hover:text-blue-600 hover:underline text-sm font-medium cursor-pointer">
+                        Or Subscribe Now
+                      </button>
+                    </>
+                  )}
                 </div>
               </PricingCard>
             </div>
