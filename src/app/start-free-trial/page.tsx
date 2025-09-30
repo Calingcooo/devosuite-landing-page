@@ -148,10 +148,16 @@ const Page = () => {
                 <LuArrowRight className="w-5 h-5" />
               </button>
 
-              <div className="text-center text-xs tracking-wide text-gray-500">
-                By starting your trial, you agree to our Terms of Service and
-                Privacy Policy.
-              </div>
+              <p className="text-center text-gray-500 text-xs mt-2">
+                By starting your trial, you agree to our{" "}
+                <a href="/terms" className="underline hover:text-gray-700">
+                  Terms of Service
+                </a>{" "}
+                and{" "}
+                <a href="/privacy" className="underline hover:text-gray-700">
+                  Privacy Policy
+                </a>
+              </p>
             </form>
           </Card>
 

@@ -164,15 +164,24 @@ const Page = () => {
 
                     {/* Card Buttons */}
                     <div className="flex flex-col mt-5 gap-2">
-                      {/* Primary CTA */}
-                      <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold w-full rounded-md py-2 cursor-pointer hover:shadow-sm transition-colors">
-                        Start Free Trial
-                      </button>
+                      {p.name === "Enterprise" ? (
+                        // Only one button for Enterprise
+                        <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold w-full rounded-md py-2 cursor-pointer hover:shadow-sm transition-colors">
+                          Contact Sales
+                        </button>
+                      ) : (
+                        <>
+                          {/* Primary CTA */}
+                          <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold w-full rounded-md py-2 cursor-pointer hover:shadow-sm transition-colors">
+                            Start Free Trial
+                          </button>
 
-                      {/* Secondary CTA as subtle link */}
-                      <button className="text-blue-500 hover:text-blue-600 hover:underline text-sm font-medium cursor-pointer">
-                        Or Subscribe Now
-                      </button>
+                          {/* Secondary CTA as subtle link */}
+                          <button className="text-blue-500 hover:text-blue-600 hover:underline text-sm font-medium cursor-pointer">
+                            Or Subscribe Now
+                          </button>
+                        </>
+                      )}
                     </div>
                   </PricingCard>
                 </div>
@@ -180,7 +189,11 @@ const Page = () => {
             </div>
 
             {/* CTA Section */}
-            <Card bordered padded className="text-center bg-blue-200/20 rounded-2xl p-12 border-gray-300">
+            <Card
+              bordered
+              padded
+              className="text-center bg-blue-200/20 rounded-2xl p-12 border-gray-300"
+            >
               <h2 className="text-3xl font-bold text-gray-700 mb-4">
                 Ready to Transform Your Business?
               </h2>
@@ -193,7 +206,9 @@ const Page = () => {
                   Start Free Trial
                   <LuArrowRight className="w-5 h-5 ml-2" />
                 </button>
-                <button className="bg-white h-10 px-10 rounded-lg hover:bg-blue-200/30 border border-gray-300 transition-colors duration-200 cursor-pointer">Schedule Demo</button>
+                <button className="bg-white h-10 px-10 rounded-lg hover:bg-blue-200/30 border border-gray-300 transition-colors duration-200 cursor-pointer">
+                  Schedule Demo
+                </button>
               </div>
               <div className="text-muted-foreground text-sm mt-6">
                 ✓ 30-day free trial &nbsp;•&nbsp; ✓ No credit card required
