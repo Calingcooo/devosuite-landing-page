@@ -90,12 +90,18 @@ const PricingSection = () => {
                   ) : (
                     <>
                       {/* Primary CTA */}
-                      <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold w-full rounded-md py-2 cursor-pointer hover:shadow-sm transition-colors">
+                      <button
+                        className="bg-blue-500 hover:bg-blue-600 text-white font-bold w-full rounded-md py-2 cursor-pointer hover:shadow-sm transition-colors"
+                        onClick={() => router.push("/start-free-trial")}
+                      >
                         Start Free Trial
                       </button>
 
                       {/* Secondary CTA as subtle link */}
-                      <button className="text-blue-500 hover:text-blue-600 hover:underline text-sm font-medium cursor-pointer">
+                      <button
+                        className="text-blue-500 hover:text-blue-600 hover:underline text-sm font-medium cursor-pointer"
+                        onClick={() => router.push("/subscribe")}
+                      >
                         Or Subscribe Now
                       </button>
                     </>
